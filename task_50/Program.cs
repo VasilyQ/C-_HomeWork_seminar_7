@@ -16,7 +16,6 @@ int ReadNumber(string message)
 }
 
 
-
 int[,] MatrixRandom(int m, int n)
 {
     int[,] matrix = new int[m, n];
@@ -39,7 +38,7 @@ int line = ReadNumber("Введите номер строки: ");
 int column = ReadNumber("Введите номер столбца: ");
 int [,] matrix = MatrixRandom(matrixLine, matrixColumn);
 
-if( line > matrixLine || line < 0 || column > matrixColumn ||column < 0 )
+if( line >= matrixLine || line < 0 || column >= matrixColumn ||column < 0 )
 {
     Console.WriteLine($"{line} {column} -> такого числа в массиве нет.");
 }

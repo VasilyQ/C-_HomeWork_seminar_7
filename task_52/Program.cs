@@ -44,7 +44,6 @@ double[] MatrixSum(int[,] matrix)
 }
 
 
-
 const int matrixLine = 3;
 const int matrixColumn = 4;
 int [,] matrix = MatrixRandom(matrixLine, matrixColumn);
@@ -52,5 +51,3 @@ int [,] matrix = MatrixRandom(matrixLine, matrixColumn);
 double[] result = MatrixSum(matrix);
 
 Console.WriteLine($"Среднее арифметическое каждого столбца: {string.Join("; " , result)}.");
-
-// Console.WriteLine($"Среднее арифметическое каждого столбца:")
