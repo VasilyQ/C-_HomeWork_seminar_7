@@ -35,15 +35,16 @@ int[,] MatrixRandom(int m, int n)
 
 const int matrixLine = 3;
 const int matrixColumn = 4;
-int [,] matrix = MatrixRandom(matrixLine, matrixColumn);
-
 int line = ReadNumber("Введите номер строки: ");
 int column = ReadNumber("Введите номер столбца: ");
-
+int [,] matrix = MatrixRandom(matrixLine, matrixColumn);
 
 if( line > matrixLine || line < 0 || column > matrixColumn ||column < 0 )
 {
     Console.WriteLine($"{line} {column} -> такого числа в массиве нет.");
 }
-
-Console.WriteLine(matrix[line, column]);
+else
+{
+    Console.WriteLine();
+    Console.WriteLine(matrix[line, column]);
+}
